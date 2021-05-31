@@ -2,6 +2,11 @@
 
 using namespace std;
 
+int doublex(int x)
+{
+    return x * 2;
+}
+
 class Shape
 {
 public:

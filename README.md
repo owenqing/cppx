@@ -19,3 +19,14 @@ add_subdirectory(src)
 
 
 ### src/stlx STL 使用示例
+
+### 如何使用 google test
+* 新建 third_party 目录用于存放第三方库
+* 在项目根目录新建 test 目录，用于存放测试文件
+* 在根目录 CMakeLists 中新增 google test 相关配置
+```cmake
+# google test
+enable_testing()
+add_subdirectory(third_party/googletest)
+include_directories(third_party/googletest/googletest/include)
+```
