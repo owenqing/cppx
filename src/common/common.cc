@@ -1,20 +1,13 @@
 #include <iostream>
 
+#include <common.h>
+
 using namespace std;
 
 int doublex(int x)
 {
     return x * 2;
 }
-
-class Shape
-{
-public:
-    int width;
-    int height;
-    Shape(int width, int height);
-    void printShape();
-};
 
 Shape::Shape(int width, int height)
 {
