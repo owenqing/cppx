@@ -1,25 +1,21 @@
 ## c++ 学习记录
 
-### cmake 使用
-* PROJECT_SOURCE_DIR PROJECT_BINARY_DIR 是已经被指定好了的值。source_dir 表示源文件路径，binary_dir 表示 build 所在路径
+### CMake 使用
+CMake 学习参考: 《CMake 实践》
 
-```shell
+```cmake
 # 指定 cmake 版本信息
 cmake_minimum_required(VERSION 3.10)
-
 # 工程名
 project(cppx)
-
 # 添加头文件路径
 include_directories(${PROJECT_SOURCE_DIR}/include)
-
 # 添加子目录
 add_subdirectory(src)
 ```
 
-
-### src/stlx STL 使用示例
-
+### STL 使用示例
+* vector
 
 ### 使用 googletest 做测试
 * 新建 third_party 目录用于存放第三方库
